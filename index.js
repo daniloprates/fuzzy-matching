@@ -47,6 +47,7 @@ FuzzyMatching.prototype.get = function(item, criteria) {
         value: this.itemMap[res[0][1]]
     }
 
+    console.log("res.value.length", res.value.length);
     // If it doesn't match requirements --> Consider not found
     if (criteria.min && res.distance < criteria.min) {
         return notFoundValue;
